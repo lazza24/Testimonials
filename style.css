@@ -4,6 +4,30 @@
   padding: 0;
 }
 
+figure {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.card-1,
+.card-2,
+.card-3,
+.card-4,
+.card-5 {
+  padding: 2em;
+  border: 1px solid transparent;
+  border-radius: 0.5em;
+}
+
+body {
+  font-family: var(--ff);
+  color: var(--clr-200);
+  font-size: 0, 8125rem;
+  line-height: 1.5;
+  padding: 1em;
+}
+
 :root {
   --clr-100: hsl(0, 0%, 100%);
   --clr-200: hsl(0, 0%, 81%);
@@ -13,4 +37,29 @@
   --clr-accent: hsl(263, 55%, 52%);
 
   --ff: "Barlow Semi Condensed", sans-serif;
+}
+
+.container {
+  display: grid;
+}
+
+.card-1 {
+  background: var(--clr-accent);
+}
+
+.card-2 {
+  background: var(--clr-300);
+}
+
+.card-3,
+.card-5 {
+  border: 1px solid var(--clr-200);
+}
+
+.card-4 {
+  background: var(--clr-400);
+}
+
+.title {
+  margin: 1em 0;
 }
